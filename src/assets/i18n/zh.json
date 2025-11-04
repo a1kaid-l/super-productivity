@@ -14,9 +14,9 @@
     "B_INSTALL": {
       "IGNORE": "忽略",
       "INSTALL": "安装",
-      "MSG": "您想要将超级生产力安装为 PWA 吗？"
+      "MSG": "您想将 Super Productivity 安装为渐进式 Web 应用(PWA)吗？"
     },
-    "B_OFFLINE": "您已断开互联网连接。同步和请求问题提供者数据将无法工作。",
+    "B_OFFLINE": "您已离线。同步与问题追踪服务暂不可用。",
     "CONTEXT_MENU": {
       "CHANGE_BACKGROUND": "更改背景"
     },
@@ -78,8 +78,8 @@
         "IMPORTANT": "重要",
         "IN_PROGRESS": "进行中",
         "KANBAN": "看板",
-        "NOT_URGENT_IMPORTANT": "不重要且紧急",
-        "NOT_URGENT_NOT_IMPORTANT": "不重要且不紧急",
+        "NOT_URGENT_IMPORTANT": "不紧急但重要",
+        "NOT_URGENT_NOT_IMPORTANT": "不紧急且不重要",
         "TO_DO": "待办",
         "URGENT": "紧急",
         "URGENT_IMPORTANT": "紧急且重要",
@@ -116,7 +116,7 @@
         "TITLE": "为项目设置 CalDav"
       },
       "FORM": {
-        "CALDAV_CATEGORY_FILTER": "要筛选的问题类别（没有则留空）",
+        "CALDAV_CATEGORY_FILTER": "要筛选的任务类别（若无可留空）",
         "CALDAV_PASSWORD": "您的 CalDav 密码",
         "CALDAV_RESOURCE": "CalDav 资源名称（日历）",
         "CALDAV_URL": "CalDav URL（基本 URL）",
@@ -124,7 +124,7 @@
         "IS_TRANSITION_ISSUES_ENABLED": "在任务完成时自动完成 CalDav 待办事项"
       },
       "FORM_SECTION": {
-        "HELP": "<p>在这里，您可以将 SuperProductivity 配置为在每日规划视图的任务创建看板中列出特定项目的未完成 CalDav 待办事项。它们将列为建议，并提供指向待办事项的链接以及有关它的更多信息。</p> <p>此外，您还可以自动添加并同步所有未完成的待办事项到您的任务待办事项列表。</p><p>要在网页应用中为 nextcloud 启用此功能，您可能需要通过 nextcloud 应用 <a href='https://apps.nextcloud.com/apps/webapppassword '>webapppassword<a> 将 \"https://app.super-productivity.com \" 加入白名单。</p>",
+        "HELP": "<p>在这里，您可以配置 SuperProductivity，在每日计划视图的任务创建面板中，为特定项目列出未完成的 CalDav 待办事项。它们将作为建议显示，提供指向原始待办的链接以及相关信息。</p><p>此外，您还可以选择自动将所有未完成的待办事项添加并同步到任务待办列表中。</p><p>若要在网页版中与 Nextcloud 正常配合使用，您可能需要通过 Nextcloud 应用 <a href='https://apps.nextcloud.com/apps/webapppassword'>webapppassword</a> 将 \"https://app.super-productivity.com\" 加入白名单。</p>",
         "TITLE": "CalDav"
       },
       "ISSUE_CONTENT": {
@@ -183,7 +183,7 @@
     },
     "DOMINA_MODE": {
       "FORM": {
-        "HELP": "在跟踪任务时间时，每隔 X 重复一次配置的短语。",
+        "HELP": "在跟踪任务时间时，每隔指定间隔重复播放提示语。",
         "L_INTERVAL": "重复短语的间隔",
         "L_TEXT": "文本",
         "L_TEXT_DESCRIPTION": "例如：\"专注于 ${currentTaskTitle}!\"",
@@ -235,7 +235,7 @@
       "POMODORO_BACK": "返回",
       "POMODORO_DISABLE": "禁用番茄",
       "POMODORO_INFO": "专注会话不能与启用的番茄计时器一起使用。",
-      "PREP_GET_MENTALLY_READY": "在心理上做好准备，保持专注和高效",
+      "PREP_GET_MENTALLY_READY": "调整心态，集中注意力，准备高效工作",
       "PREP_SIT_UPRIGHT": "坐直（或站立）",
       "PREP_STRETCH": "做一些轻度拉伸",
       "SELECT_ANOTHER_TASK": "选择另一个任务",
@@ -336,7 +336,8 @@
         "T_ALREADY_TRACKED": "已跟踪",
         "T_TITLE": "标题",
         "T_TO_BE_SUBMITTED": "待提交",
-        "TITLE": "向 GitLab 提交问题花费的时间"
+        "TITLE": "向 GitLab 提交问题花费的时间",
+        "TOTAL_MSG": "您将把今日共计 <em>{{totalTimeToSubmit}}</em> 的工作时长提交到 <em>{{nrOfTasksToSubmit}}</em> 个不同的问题。"
       },
       "FORM": {
         "FILTER": "自定义筛选",
@@ -445,7 +446,7 @@
         "DO_NOT": "不转换",
         "DONE": "完成任务的状态",
         "ENABLE": "启用 Jira 集成",
-        "ENABLE_TRANSITIONS": "启用转换处理",
+        "ENABLE_TRANSITIONS": "启用状态转换",
         "IN_PROGRESS": "开始任务的状态",
         "LOAD_SUGGESTIONS": "加载建议",
         "MAP_CUSTOM_FIELDS": "加载故事点",
@@ -587,11 +588,10 @@
         "COUNTING_SUBTASKS": "（计算子任务）",
         "DAYS_WORKED": "工作天数",
         "GLOBAL_METRICS": "全局指标",
-        "IMPROVEMENT_SELECTION_COUNT": "选择改进因素的次数",
+        "PRODUCTIVITY_BREAKDOWN_OVER_TIME": "生产力与可持续性趋势分析",
         "MOOD_PRODUCTIVITY_OVER_TIME": "情绪和生产率随时间的变化",
         "FOCUS_SESSION_TRENDS": "专注会话随时间的变化",
-        "NO_ADDITIONAL_DATA_YET": "尚未收集额外数据。使用每日摘要 \"评估\" 看板上的表单进行操作。",
-        "OBSTRUCTION_SELECTION_COUNT": "选择阻碍因素的次数",
+        "NO_ADDITIONAL_DATA_YET": "尚未收集更多数据。您可以在每日摘要的“评估”看板中填写表单来添加数据。",
         "SIMPLE_CLICK_COUNTERS_OVER_TIME": "点击计数器随时间的变化",
         "SIMPLE_COUNTERS": "简单计数器和习惯跟踪",
         "SIMPLE_STOPWATCH_COUNTERS_OVER_TIME": "秒表计数器随时间的变化",
@@ -601,20 +601,32 @@
       },
       "EVAL_FORM": {
         "ADD_NOTE_FOR_TOMORROW": "为明天添加备注",
-        "DISABLE_REPEAT_EVERY_DAY": "禁用每天重复",
-        "ENABLE_REPEAT_EVERY_DAY": "每天重复",
-        "HELP_H1": "我为什么要在意？",
-        "HELP_LINK_TXT": "转到指标部分",
-        "HELP_P1": "是时候进行一点自我评估了！您在这里的回答会被保存，并在指标部分为您提供一些关于您如何工作的统计数据。此外，明天的建议将出现在第二天您的任务列表上方。",
-        "HELP_P2": "这与其说是为了计算精确的指标或变得像机器一样高效，不如说是为了改善您对工作的感觉。评估您日常工作中的痛点以及找到有助于您的因素是很有帮助的。对此进行一点点系统化 hopefully 有助于更好地掌握这些情况并改善您能做的事情。",
-        "IMPROVEMENTS": "什么提高了您的生产力？",
-        "IMPROVEMENTS_TOMORROW": "您明天能做些什么来改进？",
-        "MOOD": "您感觉如何？",
-        "MOOD_HINT": "1：糟糕 – 10：极好",
-        "NOTES": "给明天的备注",
-        "OBSTRUCTIONS": "什么阻碍了您的生产力？",
-        "PRODUCTIVITY": "您的工作效率如何？",
-        "PRODUCTIVITY_HINT": "1：甚至还没开始 – 10：极其高效"
+        "FOCUS_WORK_TIME": "专注工作时间",
+        "IMPACT_OF_WORK": "如何评价今日工作的影响力？",
+        "IMPACT_OF_WORK_HINT": "1分：无明显进展 — 4分：影响显著",
+        "PRODUCTIVITY_SCORE": "生产力得分",
+        "PRODUCTIVITY_SCORE_TOOLTIP": "65% 影响力（1-4分）• 30% 专注时长（目标4小时）• 5% 总工时（上限10小时）",
+        "SUSTAINABILITY_SCORE": "可持续性得分", 
+        "SUSTAINABILITY_SCORE_TOOLTIP": "45% 能量水平 • 40% 合理工时（10小时为0分）• 15% 专注平衡（4小时为最佳值）",
+        "ENERGY_LEVEL": "当前能量状态如何？",
+        "ENERGY_LEVEL_HINT": "😫 精疲力尽 — 😐 状态一般 — 😊 精力充沛",
+        "TOTAL_WORK_TIME": "今日总工时",
+        "DAILY_STATE": "每日状态",
+        "DAILY_STATE_TOOLTIP": "基于双得分（≥50为高）的四象限系统：深度心流（高/高）、过度驱动（高/低）、恢复充电（低/高）、游离状态（低/低）",
+        "STATE_DEEP_FLOW_HEADLINE": "深度心流：专注度与可持续性俱佳",
+        "STATE_DEEP_FLOW_HINT": "您正处于最佳状态——请思考是什么促成了这样的完美组合",
+        "STATE_OVERDRIVE_HEADLINE": "过度驱动：成效显著但代价不小",
+        "STATE_OVERDRIVE_HINT": "您完成了大量工作——请确保在倦怠袭来前及时充电",
+        "STATE_RECOVERY_HEADLINE": "恢复充电：休整与能量补充", 
+        "STATE_RECOVERY_HINT": "您正在让大脑获得恢复空间。明天您将重新拥有深入工作的能量",
+        "STATE_DRIFT_HEADLINE": "游离状态：专注力与能量双低",
+        "STATE_DRIFT_HINT": "这很正常。复盘分心原因并温和调整——每次重置都是学习的机会",
+        "STATE_STEADY_HEADLINE": "稳定节奏：持续且可持续的进展",
+        "STATE_STEADY_HINT": "很好的平衡。您在保持动力的同时没有过度消耗——请继续维持让此节奏生效的要素",
+        "STATE_IMPACT_MISMATCH_HEADLINE": "低影响力：投入大量专注但收效甚微", 
+        "STATE_IMPACT_MISMATCH_HINT": "您投入了扎实的专注力——现在请将其导向更高影响力的工作以感受不同",
+        "SCORE_BREAKDOWN_TITLE_PRODUCTIVITY": "7日生产力分析",
+        "SCORE_BREAKDOWN_TITLE_SUSTAINABILITY": "7日可持续性分析"
       },
       "S": {
         "SAVE_METRIC": "指标已成功保存"
@@ -648,7 +660,7 @@
         "DO_NOT": "不转换",
         "DONE": "完成任务的状态",
         "ENABLE": "启用 Openproject 集成",
-        "ENABLE_TRANSITIONS": "启用转换处理",
+        "ENABLE_TRANSITIONS": "启用状态转换",
         "IN_PROGRESS": "开始任务的状态",
         "OPEN": "暂停任务的状态",
         "PROGRESS_ON_SAVE": "保存时的默认进度",
@@ -760,13 +772,13 @@
     "PROCRASTINATION": {
       "BACK_TO_WORK": "回去工作！",
       "COMP": {
-        "INTRO": "拖延程度高的人通常自我怜悯水平较低。所以练习它！它会提高您的自我价值感，培养积极情绪，当然可以帮助您克服拖延。尝试一个小练习：",
+        "INTRO": "拖延程度高的人通常自我关怀水平较低。所以练习它！它会提高您的自我价值感，培养积极情绪，当然可以帮助您克服拖延。尝试一个小练习：",
         "L1": "坐下来，伸展一下自己，如果您愿意，冷静下来一点",
         "L2": "尝试倾听出现的想法和感受",
         "L3": "您是否以回应朋友的方式回应自己？",
         "L4": "如果答案是否定的，想象您的朋友处于您的境地。您会对他们说什么？您会为他们做什么？",
         "OUTRO": "更多练习 <a target=\"_blank\" href=\"https://drsoph.com/blog/2018/9/17/3-exercises-in-self-compassion \" target=\"_blank\">可以在此处找到</a> 或在 <a target=\"_blank\" href=\"https://www.google.com/search?q=self+compassion+exercises&oq=self+compassion+excers&aqs=chrome.1.69i57j0l5.4303j0j7&sourceid=chrome&ie=UTF-8 \">谷歌</a> 上。",
-        "TITLE": "自我怜悯"
+        "TITLE": "自我关怀"
       },
       "CUR": {
         "INTRO": "拖延不是很有趣吗？它似乎没有任何意义，因为它根本不符合您的长期利益。但仍然每个人都这样做。探索并更好地了解它如何为您个人工作是非常有帮助的！一些基本问题可以问自己：",
@@ -995,8 +1007,8 @@
     "SYNC": {
       "A": {
         "ARCHIVE_ONLY_UPLOADED": "您的数据仅部分上传。请稍后再试！否则，您将无法将数据同步到其他设备。",
-        "POSSIBLE_LEGACY_DATA": "超级生产力通过现在使用两个单独的文件而不是单个文件来改进同步，从而大大减少了数据传输。建议更新所有超级生产力实例，并首先从数据最新的应用实例同步数据。如果这是来自本地设备的数据，请忽略此警告并继续确认下一个对话框以上传它。",
-        "REMOTE_MODEL_VERSION_NEWER": "远程模型版本比本地模型版本新。请将您的本地应用更新到最新版本！"
+        "POSSIBLE_LEGACY_DATA": "超级生产力现在通过将单个文件拆分为两个独立文件来改进同步，从而显著减少数据传输量。建议更新所有超级生产力实例，并首先从数据最新的应用实例同步数据。如果这是来自本地设备的数据，请忽略此警告并继续确认下一个对话框以上传它。",
+        "REMOTE_MODEL_VERSION_NEWER": "远程数据版本比本地版本更新。请先更新本地应用到最新版本！"
       },
       "BTN_SYNC_NOW": "立即同步",
       "C": {
@@ -1354,6 +1366,7 @@
         "FOUND_MOVE_FROM_BACKLOG": "将任务 <strong>{{title}}</strong> 从待办事项移至今日任务列表",
         "FOUND_MOVE_FROM_OTHER_LIST": "将任务 <strong>{{title}}</strong> 从 <strong>{{contextTitle}}</strong> 添加至当前列表",
         "FOUND_RESTORE_FROM_ARCHIVE": "从归档中恢复了与问题相关的任务 <strong>{{title}}</strong>",
+        "GO_TO_TASK": "跳转至任务",
         "LAST_TAG_DELETION_WARNING": "您正在尝试删除非项目任务的最后一个标签。这是不允许的！",
         "MOVED_TO_ARCHIVE": "将 {{nr}} 个任务移至归档",
         "MOVED_TO_PROJECT": "将任务 \"{{taskTitle}}\" 移至项目 \"{{projectTitle}}\"",
@@ -1456,6 +1469,11 @@
         "WEDNESDAY": "周三",
         "INHERIT_SUBTASKS": "继承子任务",
         "INHERIT_SUBTASKS_DESCRIPTION": "启用后，将重新创建最近任务实例中的子任务以及重复任务",
+        "REPEAT_FROM_COMPLETION_DATE": "完成后重复",
+        "REPEAT_FROM_COMPLETION_DATE_DESCRIPTION": "下一个任务将基于完成日期而非开始日期创建（例如：“每7天”=完成后第7天）",
+        "SCHEDULE_TYPE_LABEL": "排程类型",
+        "SCHEDULE_TYPE_FIXED": "固定排程（如：每周一、每月1号）",
+        "SCHEDULE_TYPE_FLEXIBLE": "完成后排程（如：完成7天后）",
         "REMOVE_INSTANCE": "移除今天",
         "REMOVE_FOR_DATE": "移除 {{date}}",
         "DISABLE_AUTO_UPDATE_SUBTASKS": "禁用自动更新子任务",
@@ -1746,6 +1764,7 @@
         "TOGGLE_BACKLOG": "显示/隐藏任务待办事项",
         "TOGGLE_BOOKMARKS": "显示/隐藏书签栏",
         "TOGGLE_ISSUE_PANEL": "显示/隐藏问题看板",
+        "TOGGLE_PLAY": "开始/停止任务",
         "TOGGLE_SIDE_NAV": "聚焦侧边导航",
         "TOGGLE_TASK_VIEW_CUSTOMIZER_PANEL": "切换筛选/分组/排序看板",
         "TRIGGER_SYNC": "触发同步（如果已配置）",
